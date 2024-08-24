@@ -1,14 +1,12 @@
-This program will use BeautifulSoup to scrape all hackathon related data from 6 major websites. The program will also filter the data based on the users needs.
+This program will use BeautifulSoup to scrape all hackathon-related data. The program will also filter the data based on the user's needs.
 
 Websites:
 https://devpost.com/hackathons
-https://www.hackathon.com/
-
-https://www.hackerearth.com/challenges/?filters=competitive%2Chackathon%2Chiring%2Cuniversity
+https://mlh.io/seasons/2025/events
+1
 
 Characteristics:
-Virtual or In-person
-Prize pool
+Name
 Location
 Date
-Category/Theme
+
