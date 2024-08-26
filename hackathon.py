@@ -13,7 +13,7 @@ def scrape_website(url, tags_and_classes, scroll_pause_time=1, scroll_increment=
     driver.get(url)
 
     last_height = driver.execute_script("return document.body.scrollHeight")
-    increase = 150
+    increase = 150 # To speed up scrolling
 
     for i in range(max_scrolls):
         for j in range(0, last_height, scroll_increment):
@@ -21,6 +21,8 @@ def scrape_website(url, tags_and_classes, scroll_pause_time=1, scroll_increment=
             time.sleep(scroll_pause_time)
             
         new_height = driver.execute_script("return document.body.scrollHeight")
+
+        # Page can no longer load condition
         if new_height == last_height:
             break
         
@@ -43,7 +45,7 @@ def scrape_website(url, tags_and_classes, scroll_pause_time=1, scroll_increment=
         texts = [element.get_text(strip=True) for element in elements]
 
         # Assign texts to name and date based on expected order 
-        if tag == 'h3' or 'span' in tag:  # TAGS ARE ASSUMED
+        if tag == 'h3' or 'span' in tag:  # TAGS ARE ASSUMED 
             name = texts
         elif tag == 'p' or 'div' in tag:  # TAGS ARE ASSUMED
             date = texts
@@ -54,9 +56,9 @@ def scrape_website(url, tags_and_classes, scroll_pause_time=1, scroll_increment=
     else:
         return []
 
-# URL mapping
+# URL mapping 
 url_tags_classes_map = {
-    'https://devpost.com/hackathons': [
+    'https://devpost.com/hackathons': [ 
         ('span', 'label round host-label'),
         ('div', 'submission-period'),
     ],
