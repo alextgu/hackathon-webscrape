@@ -10,8 +10,7 @@ Characteristics:
 Name
 Date
 
-
-INSTALL AND RUN
+HOW TO RUN CODE:
 1. Installations:
     Terminal
     - pip install selenium
