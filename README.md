@@ -44,6 +44,6 @@ Sample Output
 
 
 
-This program is straightforward but versatile. Feel free to use and modify the code as needed. Feedback is always appreciated (even the mean ones).
+This program is straightforward but versatile. Feel free to use and modify the code as needed. 
 
 This project is licensed under the MIT License. See the LICENSE file for details.
